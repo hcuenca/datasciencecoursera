@@ -1,9 +1,4 @@
----
-title: "Code Book"
-author: "Helena Cuenca"
-date: "27 Dec 2015"
-output: html_document
----
+# Code Book
 
 The tidy data set contains the following variables:
 
