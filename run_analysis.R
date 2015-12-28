@@ -50,3 +50,9 @@ names(activities)[2] <- "activity_name"
 
 # Join data with activity names
 data <- merge(data, activities, by = "label")
+
+# Remove column for label
+data[1] <- NULL
+
+# Creates a second data frame with the average of each variable for each activity and each subject.
+aggregatedData <- aggregate(data[,1:79], list(data$activity_name, data$subject), mean)
